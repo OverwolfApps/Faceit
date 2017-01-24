@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- @if ENV='prod' -->
+    <meta http-equiv="refresh" content="1;url=http://faceit-overwolf-assets-prod.s3-website-us-east-1.amazonaws.com">
+    <script type="text/javascript">
+      window.location.href = "http://faceit-overwolf-assets-prod.s3-website-us-east-1.amazonaws.com"
+    </script>
+    <!-- @endif -->
+
+    <!-- @if ENV='beta' 
+    <meta http-equiv="refresh" content="1;url=https://s3.amazonaws.com/faceit-overwolf-assets/beta/index.html">
+    <script type="text/javascript">
+      window.location.href = "https://s3.amazonaws.com/faceit-overwolf-assets/beta/index.html"
+    </script>
+    <!-- @endif -->
+    
+    <!-- @if ENV='dev' 
+    <meta http-equiv="refresh" content="1;url=https://s3.amazonaws.com/faceit-overwolf-assets/dev/index.html">
+    <script type="text/javascript">
+      window.location.href = "https://s3.amazonaws.com/faceit-overwolf-assets/dev/index.html"
+    </script>
+    <!-- @endif -->
+    
+    <title>Redirecting</title>
+  </head>
+  <body></body>
+</html>
